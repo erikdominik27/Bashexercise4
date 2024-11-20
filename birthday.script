@@ -1,0 +1,8 @@
+#!bash/bin
+
+read -p "Enter your birthdate (y.m.d):" birthdate
+currentyear=2024
+birthyear=$(echo $birthdate | cut -d '.' -f1) 
+age=$((currentyear - birthyear))
+echo "Your age is: $age"
+
